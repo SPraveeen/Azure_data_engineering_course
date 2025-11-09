@@ -23,3 +23,8 @@
       - RIGHT JOIN (or RIGHT OUTER JOIN): Returns all rows from the right table and the matched rows from the left table. If there is no match, NULLs are returned for columns from the left table.
       - FULL JOIN (or FULL OUTER JOIN): Returns rows when there is a match in one of the tables. It returns all rows from both tables, with NULLs in places where there is no match.
       - CROSS JOIN: Returns the Cartesian product of both tables, combining each row from the first table with every row from the second table.
+
+
+- difference between union and union all in sql
+    - UNION: The UNION operator combines the result sets of two or more SELECT statements and removes duplicate rows from the final result set. It performs a distinct operation.
+    - UNION ALL: The UNION ALL operator also combines the result sets of two or more SELECT statements, but it includes all rows, including duplicates. It does not perform any distinct operation, making it faster than UNION when duplicates are not a concern.
