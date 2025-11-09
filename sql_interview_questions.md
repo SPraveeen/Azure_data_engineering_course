@@ -28,3 +28,7 @@
 - difference between union and union all in sql
     - UNION: The UNION operator combines the result sets of two or more SELECT statements and removes duplicate rows from the final result set. It performs a distinct operation.
     - UNION ALL: The UNION ALL operator also combines the result sets of two or more SELECT statements, but it includes all rows, including duplicates. It does not perform any distinct operation, making it faster than UNION when duplicates are not a concern.
+
+
+- what is window function in sql
+    - A window function in SQL performs calculations across a set of table rows that are related to the current row. Unlike aggregate functions, which return a single value for a group of rows, window functions return a value for each row based on the defined window (or partition) of rows. Common examples of window functions include ROW_NUMBER(), RANK(), and SUM() OVER(). They are often used for ranking, running totals, and moving averages without collapsing the result set.
