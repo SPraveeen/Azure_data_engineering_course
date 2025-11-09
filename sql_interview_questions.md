@@ -15,3 +15,11 @@
     - Foreign Key: A foreign key is a column or a set of columns in one table that refers to the primary key in another table. It is used to establish and enforce a link between the data in the two tables, ensuring referential integrity.
     - Unique Key: A unique key is a column or a set of columns that ensures all values in that column(s) are unique across the table. Unlike primary keys, unique keys can accept NULL values (but only one NULL per column in most databases).
 
+
+- what are joins in sql and types of joins
+    - Joins in SQL are used to combine rows from two or more tables based on a related column between them. The main types of joins are:
+      - INNER JOIN: Returns only the rows that have matching values in both tables.
+      - LEFT JOIN (or LEFT OUTER JOIN): Returns all rows from the left table and the matched rows from the right table. If there is no match, NULLs are returned for columns from the right table.
+      - RIGHT JOIN (or RIGHT OUTER JOIN): Returns all rows from the right table and the matched rows from the left table. If there is no match, NULLs are returned for columns from the left table.
+      - FULL JOIN (or FULL OUTER JOIN): Returns rows when there is a match in one of the tables. It returns all rows from both tables, with NULLs in places where there is no match.
+      - CROSS JOIN: Returns the Cartesian product of both tables, combining each row from the first table with every row from the second table.
