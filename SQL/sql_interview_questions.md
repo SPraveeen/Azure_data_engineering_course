@@ -42,3 +42,6 @@
     - ROWNUM is assigned before sorting, while RANK() and DENSE_RANK() are assigned after sorting.
     - RANK() can leave gaps in the ranking sequence, whereas DENSE_RANK() does not.
     - ROWNUM is specific to Oracle, while RANK() and DENSE_RANK() are standard SQL window functions available in various database systems.
+
+    -- find second highest salary
+    
