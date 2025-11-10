@@ -32,3 +32,13 @@
 
 - what is window function in sql
     - A window function in SQL performs calculations across a set of table rows that are related to the current row. Unlike aggregate functions, which return a single value for a group of rows, window functions return a value for each row based on the defined window (or partition) of rows. Common examples of window functions include ROW_NUMBER(), RANK(), and SUM() OVER(). They are often used for ranking, running totals, and moving averages without collapsing the result set.
+
+- what is rownum,rank,dense_rank and their differences in sql
+    - ROWNUM: ROWNUM is a pseudo-column in Oracle that assigns a unique sequential number to each row returned by a query, starting from 1. It is assigned before any sorting or filtering is applied.
+    - RANK(): RANK() is a window function that assigns a rank to each row within a partition of a result set. Rows with the same values receive the same rank, and the next rank is incremented by the number of tied rows (i.e., it leaves gaps).
+    - DENSE_RANK(): DENSE_RANK() is similar to RANK(), but it does not leave gaps in the ranking sequence. Rows with the same values receive the same rank, and the next rank is simply incremented by 1.
+
+    Differences:
+    - ROWNUM is assigned before sorting, while RANK() and DENSE_RANK() are assigned after sorting.
+    - RANK() can leave gaps in the ranking sequence, whereas DENSE_RANK() does not.
+    - ROWNUM is specific to Oracle, while RANK() and DENSE_RANK() are standard SQL window functions available in various database systems.
